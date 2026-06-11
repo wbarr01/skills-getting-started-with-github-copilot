@@ -59,19 +59,113 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #d8def5;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+  box-shadow: 0 10px 24px rgba(26, 35, 126, 0.08);
+}
+
+.activity-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 6px;
+  color: #15215d;
+  font-size: 1.1rem;
 }
 
-.activity-card p {
+.activity-card__description {
+  color: #4f587a;
+}
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 94px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #e8efff;
+  color: #243b8f;
+  font-weight: 700;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.activity-card__meta {
+  margin-bottom: 14px;
+  color: #36405f;
+}
+
+.participants-section h5 {
+  margin-bottom: 10px;
+  color: #15215d;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.participants-list {
+  padding-left: 0;
+  margin: 0;
+  color: #35415f;
+}
+
+.participant-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
   margin-bottom: 8px;
+  border-radius: 10px;
+  background: #eef3ff;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-remove-button {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 999px;
+  background: #ffebee;
+  color: #b71c1c;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.participant-remove-button:hover {
+  transform: translateY(-1px);
+  background: #ffcdd2;
+}
+
+.participant-remove-button:focus-visible {
+  outline: 3px solid #9db4ff;
+  outline-offset: 2px;
+}
+
+.participants-list .empty-state {
+  list-style: none;
+  padding-left: 0;
+  color: #6d7693;
+  font-style: italic;
 }
 
 .form-group {
